@@ -1,18 +1,11 @@
 var a = 5;
-h = 6;
-TriangleArea = a * h / 2;
+var h = 6;
+var TriangleArea = a * h / 2;
 function getTriangleArea(a, h) {
-    if (a < 0)
-    {
+    if (a < 0 || h < 0) {
         alert("Nieprawid³owe dane");
+    } else {
+        return a * h / 2;
     }
-    if (h < 0)
-    {
-        alert("Nieprawidlowe dane");
-    }
-else
-{
-return "TriangleArea";
-}
 }
 console.log(getTriangleArea(10, 6));
